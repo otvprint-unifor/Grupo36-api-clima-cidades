@@ -1,0 +1,113 @@
+{
+  "info": {
+    "name": "Grupo 36 - API Clima e Cidades",
+    "description": "Coleção Postman da API de agregação de dados climáticos e geográficos.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/v1/health",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v1", "health"]
+        }
+      }
+    },
+    {
+      "name": "Clima por Cidade - Fortaleza",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/v1/clima/Fortaleza",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v1", "clima", "Fortaleza"]
+        }
+      }
+    },
+    {
+      "name": "Erro 400 - Nome Inválido",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/v1/clima/X",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v1", "clima", "X"]
+        }
+      }
+    },
+    {
+      "name": "Erro 404 - Cidade Não Encontrada",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/v1/clima/CidadeInexistente",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v1", "clima", "CidadeInexistente"]
+        }
+      }
+    },
+    {
+      "name": "Cidades por Estado - CE",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/v1/cidades/CE?limite=5",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v1", "cidades", "CE"],
+          "query": [
+            {
+              "key": "limite",
+              "value": "5"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Erro 400 - UF Inválida",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/v1/cidades/ceara",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v1", "cidades", "ceara"]
+        }
+      }
+    },
+    {
+      "name": "Erro 404 - UF Não Encontrada",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/v1/cidades/XX",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v1", "cidades", "XX"]
+        }
+      }
+    }
+  ]
+}
