@@ -77,6 +77,7 @@ Health Check
 Cidade válida
 Cidade inexistente
 
+```
 🧪 Como testar a API
 Via navegador
 Abra os links abaixo:
@@ -89,9 +90,11 @@ Via Postman
 Abra o Postman
 Clique em "Import"
 Selecione o arquivo: docs/postman_collection.json
+```
 
 -------
 
+```
 📁 Estrutura do projeto
 /
 ├── README.md
@@ -102,7 +105,7 @@ Selecione o arquivo: docs/postman_collection.json
 │   └── api.test.js
 └── docs/
     └── postman_collection.json
-
+```
 📬 Coleção Postman
 
 Arquivo disponível em: docs/postman_collection.json
