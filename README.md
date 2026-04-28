@@ -37,17 +37,12 @@ A aplicação integra APIs públicas para fornecer dados geográficos e climáti
 ```bash
 git clone https://github.com/otvprint-unifor/Grupo36-api-clima-cidades.git
 cd Grupo36-api-clima-cidades
----
 
 2. Instalar dependências
 
-```bash
 npm install
----
 
 3. Rodar a API
-
-```bash
 npm run dev
 
 A API estará disponível em:
